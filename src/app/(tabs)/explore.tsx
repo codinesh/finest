@@ -1,5 +1,5 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { StyleSheet, Image, Platform } from "react-native";
+import { StyleSheet, Image, Platform, Text } from "react-native";
 
 import { Collapsible } from "@/components/Collapsible";
 import { ExternalLink } from "@/components/ExternalLink";
@@ -16,7 +16,7 @@ export default function TabTwoScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <Text className="bg-red-600 border-2">Explore</Text>
       </ThemedView>
       <ThemedText>
         This app includes example code to help you get started.
@@ -28,7 +28,7 @@ export default function TabTwoScreen() {
           and{" "}
           <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
         </ThemedText>
-        <ThemedText className="bg-red-500">
+        <ThemedText className="bg-red-500 font-bold">
           The layout file in{" "}
           <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{" "}
           sets up the tab navigator.
