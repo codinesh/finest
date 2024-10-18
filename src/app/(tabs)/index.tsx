@@ -3,6 +3,7 @@ import { Image, StyleSheet, Platform } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { Box } from "@/components/ui/box";
 import { Text } from "@/components/ui/text";
+import { Link, LinkText } from "@/components/ui/link";
 
 export default function HomeScreen() {
   return (
@@ -18,6 +19,10 @@ export default function HomeScreen() {
       <Box className="bg-primary-300 rounded-md p-5">
         <Text className="text-typography-0">This is the Box</Text>
       </Box>
+
+      <Link href="signin" className="p-2 bg-blue-500">
+        <LinkText>Sign in</LinkText>
+      </Link>
     </ParallaxScrollView>
   );
 }
