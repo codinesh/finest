@@ -5,7 +5,7 @@
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
-    "ios": "expo start --ios --clear",
+    "ios": "DEBUG=nativewind expo start --ios --clear",
     "web": "expo start --web",
     "lint": "expo lint"
   },
