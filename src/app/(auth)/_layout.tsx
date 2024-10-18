@@ -7,7 +7,7 @@ import { VStack } from "@/components/ui/vstack";
 import { SafeAreaView } from "@/components/ui/safe-area-view";
 import { Image } from "@/components/ui/image";
 
-const SignInLayout = () => {
+const AuthLayout = () => {
   return (
     <SafeAreaView className="w-full h-full">
       <ScrollView
@@ -34,6 +34,4 @@ const SignInLayout = () => {
   );
 };
 
-export default SignInLayout;
-
-const styles = StyleSheet.create({});
+export default AuthLayout;
