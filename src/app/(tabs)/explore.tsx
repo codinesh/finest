@@ -3,12 +3,9 @@ import { StyleSheet, Image, Platform, Text } from "react-native";
 
 import { Collapsible } from "@/components/Collapsible";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
 import { verifyInstallation } from "nativewind";
 
 export default function TabTwoScreen() {
-  verifyInstallation();
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#D0D0D0", dark: "#353636" }}
@@ -22,19 +19,6 @@ export default function TabTwoScreen() {
       <Text className="text-primary-900 bg-green-600">
         This app includes example code to help you get started.
       </Text>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText>{" "}
-          and{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText className="bg-red-500 font-bold">
-          The layout file in{" "}
-          <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{" "}
-          sets up the tab navigator.
-        </ThemedText>
-      </Collapsible>
     </ParallaxScrollView>
   );
 }
