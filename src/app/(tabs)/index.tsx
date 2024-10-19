@@ -23,6 +23,10 @@ export default function HomeScreen() {
       <Link href="signin" className="p-2 bg-blue-500">
         <LinkText>Sign in</LinkText>
       </Link>
+
+      <Link href="/settings" className="p-2 bg-blue-500">
+        <LinkText>Settings</LinkText>
+      </Link>
     </ParallaxScrollView>
   );
 }

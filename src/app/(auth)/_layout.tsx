@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Slot } from "expo-router";
+import { Slot, Stack } from "expo-router";
 import { ScrollView } from "@/components/ui/scroll-view";
 import { HStack } from "@/components/ui/hstack";
 import { VStack } from "@/components/ui/vstack";
@@ -25,9 +25,7 @@ const AuthLayout = () => {
               alt="Radial Gradient"
             />
           </VStack>
-          <VStack className="md:items-center md:justify-center flex-1 w-full  p-9 md:gap-10 gap-16 md:m-auto md:w-1/2 h-full">
-            <Slot />
-          </VStack>
+          <VStack className="md:items-center md:justify-center flex-1 w-full  p-9 md:gap-10 gap-16 md:m-auto md:w-1/2 h-full"></VStack>
         </HStack>
       </ScrollView>
     </SafeAreaView>
